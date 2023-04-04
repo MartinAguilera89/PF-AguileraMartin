@@ -1,363 +1,365 @@
-
-    /* reset */
-
-	*{
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		list-style: none;
-	}
-
-	/* estilos generales */
-
-@font-face {
-	font-family: "LGC";
-	src: url(../FONT/Louis\ George\ Cafe.ttf);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
 @font-face {
-	font-family: "LGC Bold";
-	src: url(../FONT/Louis\ George\ Cafe\ Bold.ttf);
-
+  font-family: "LGC";
+  src: url(../FONT/Louis\ George\ Cafe.ttf);
 }
-body{
-	font-family: "LGC", serif ;
-	font-size: 16px;
+@font-face {
+  font-family: "LGC Bold";
+  src: url(../FONT/Louis\ George\ Cafe\ Bold.ttf);
 }
-
-header{
-	width: 100%;
-	height: 400px;
-	background-image: url(../imagenes/fondo7.jpg);
-	background-position: 0;
-	background-size: cover;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	align-items: start;
+/* estilos generales */
+body {
+  font-family: "LGC", serif;
+  font-size: 16px;
 }
 
-header h1{
-	font-family: "LGC Bold", serif;
-	padding: 10px 20px 5px 30px;
-	font-size: 3rem;
+header {
+  width: 100%;
+  height: 400px;
+  background-image: url(../imagenes/fondo7.jpg);
+  background-position: 0;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+header h1 {
+  font-family: "LGC Bold", serif;
+  padding: 10px 20px 5px 30px;
+  font-size: 3rem;
+}
+header p {
+  padding: 5px 30px;
 }
 
-header p{
-	padding: 5px 30px;
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: #c9000d;
+  display: block;
+  position: sticky;
+  top: 0;
+}
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar ul .item {
+  padding: 0 20px;
+  margin-right: 5px;
+  background: rgb(82, 0, 0);
+  background: linear-gradient(36deg, rgb(82, 0, 0) 0%, rgb(121, 9, 9) 40%, rgb(194, 0, 0) 100%);
 }
 
-.navbar{
-	width: 100%;
-	height: 50px;
-	background-color: #c9000d;
-	display: block;
-	position: sticky;
-	top: 0;
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-family: "LGC Bold", serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 2.2rem;
 }
 
-.navbar ul{
-	display: flex;
-	justify-content: flex-end;
+#check-menu, label.hamburguesa {
+  display: none;
 }
 
-.navbar ul .item{
-	padding: 0 20px;
-	margin-right: 5px;
+a:hover {
+  background-color: whitesmoke;
+  color: hsl(356, 100%, 39%);
+  opacity: 0.8;
+  font-size: 1.25rem;
+  font-style: italic;
 }
 
-.menu a{
-	color: white;
-	text-decoration: none;
-	font-family: "LGC Bold", serif;
-	font-weight: 300;
-	font-size: 1rem;
-	line-height: 2.2rem;
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #c9000d;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  overflow: hidden;
 }
-
-#check-menu, label.hamburguesa{
-	display: none;
-}
-
-a:hover{
-	background-color: whitesmoke;
-	color: #c9000d;
-	opacity: .8;
-	font-size: 1.25rem;
-	font-style:italic;
-}
-
-footer{
-	width: 100%;
-	height: 200px;
-	background-color: #c9000d;
-	color: white;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding-top: 20px;
-	overflow: hidden;
- }
 
 /* estilos inicio */
-
-.nosotros{
-	margin-top: 5%;
-	display: flex;
-	justify-content:space-evenly;
+.nosotros {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nosotros .quienes-somos {
+  width: 100%;
+  height: 350px;
+  margin: auto;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nosotros .quienes-somos h2 {
+  padding-bottom: 30px;
+  font-weight: bold;
 }
 
-.quienes-somos{
-	width: 100%;
-	height: 350px;
-	margin: auto;
-	padding-left: 50px;
-	display: flex;
-	flex-direction: column;
-	justify-content:center;
+.mision {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 100px 50px;
+}
+.mision img:hover {
+  opacity: 0.8;
+}
+.mision .muestra {
+  overflow: hidden;
 }
 
-.quienes-somos h2{
-	padding-bottom: 30px;
+.detalle {
+  padding: 0 100px;
+  font-weight: bold;
 }
 
-.mision{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 50px 100px 50px;
+.petshop {
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
 }
-
-.mision img:hover{
-	opacity: .8;
+.petshop .card {
+  width: 300px;
+  height: auto;
+  background-color: rgb(247, 247, 236);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 0.25px solid rgb(10, 10, 116);
+  border-radius: 10px;
 }
-
-.detalle{
-	padding: 0 100px;
-	font-weight: bold;
+.petshop .pulse:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.petshop h3 {
+  padding: 20px;
+  color: rgb(10, 10, 116);
+  font-size: 2.2rem;
+  font-weight: bold;
 }
 
 /* estilos perros y gatos*/
-
-.descripcion{
-	height: 30vh;
-	padding: 5%;
+.descripcion {
+  height: 30vh;
+  padding: 5%;
 }
 
-.galeria-marcas{
-	width: 100%;
-	padding: 50px 10px;
-	display: flex;
-	align-items:center;
-	justify-content: space-evenly;
-	overflow: auto;
-	
+.galeria-marcas {
+  width: 100%;
+  padding: 50px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: auto;
 }
 
-.row-cols-4{
-	padding: 2.5%;
-	gap: 3.5rem;
-	display: flex;
-	justify-content: space-evenly;
-
+.row-cols-4 {
+  padding: 2.5%;
+  gap: 3.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.row-cols-4 h4 {
+  font-weight: bold;
 }
 
-.row div{
-	border: 1px solid;
-	border-radius: 10px;
-	font-weight: bold;
-	background-color: rgb(247, 247, 236);
-	display: flex;
-	flex-direction: column;
-	justify-content:start;
-	align-items: center;
+.row div {
+  border: 1px solid;
+  border-radius: 10px;
+  font-weight: bold;
+  background: rgb(248, 251, 188);
+  background: radial-gradient(circle, rgb(248, 251, 188) 1%, rgb(250, 233, 138) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 
 /* estilos accesorios */
-
 /* estilos servicios */
-
 /* estilos contacto */
-
-.formulario{
-	width: 100%;
-	height: 700px;
-	color: black;
-	font-size: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.formulario {
+  width: 100%;
+  height: 700px;
+  color: black;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formulario .consulta {
+  margin-top: 1em;
+  height: 2.5em;
+  padding: 10px;
+}
+.formulario .form {
+  width: 50%;
+  height: 100px;
+  margin-top: 30px;
+  display: block;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 0.5;
+  row-gap: 1rem;
 }
 
-.consulta{
-	margin-top: 1em;
-	height: 2.5em;
-	padding: 10px;
+.container-contacto {
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-contacto .maps-contacto {
+  color: black;
+  font-size: 16px;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container-contacto .encontrar {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
-.form{
-	width: 50%;
-	height: 100px;
-	margin-top: 30px;
-	display: block;
-	justify-content: center;
-	flex-direction: column;
-	flex-grow: 0.5;
-	row-gap: 1rem;
+@media screen and (max-width: 768px) {
+  .cabecera {
+    display: none;
+  }
+  .navbar ul {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    top: 50px;
+    width: 100%;
+    height: 200px;
+    flex-direction: column;
+    background-color: rgb(133, 2, 2);
+    justify-content: space-around;
+    overflow: hidden;
+  }
+  label.hamburguesa {
+    display: block;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+  }
+  #check-menu:checked ~ ul {
+    display: block;
+  }
+  .nosotros {
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: auto;
+  }
+  .quienes-somos, .detalle {
+    padding: 5%;
+    font-size: 1.5rem;
+  }
+  .mision {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+  }
+  .petshop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .container-contacto {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .galeria-marcas {
+    display: none;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .row-cols-4 {
+    display: block;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .col-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.container-contacto{
-	padding: 1.2rem;
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.maps-contacto{
-	color: black;
-	font-size: 16px;
-	width: 100%;
-	height: 400px;
-	display:flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-
-.encontrar{
-	width: 100%;
-	height: 400px;
-	display:flex;
-	flex-direction: column;
-	justify-content: start;
-
-}
-
-.petshop{
-	padding: 30px;
-	display: flex;
-	justify-content: space-evenly;
-	text-align: center;
-}
-
-.card{
-	width: 300px;
-	height: auto;
-	background-color: rgb(247, 247, 236);
-	display: flex;
-	flex-direction:column;
-	justify-content:flex-start;
-	border: 0.25px solid rgb(10, 10, 116) ;
-	border-radius: 10px ;
-}
-
-h3 {
-	padding: 20px;
-	color: rgb(10, 10, 116);
-	font-size: 2.2rem;
-	font-weight: bold;
-}
-
-/* medias queries */
-
-@media screen and (max-width:768px) {
-
-	.cabecera{
-		display: none;
-	}
-
-	.navbar ul{
-		display: none;
-		position: absolute;
-		height: 100vh;
-		top: 50px;
-		width: 100%;
-		height: 200px;
-		flex-direction: column;
-		background-color: rgb(133, 2, 2);
-		justify-content: space-around;
-		overflow: hidden;
-	}
-
-	label.hamburguesa{
-		display: block;
-		font-size: 1.5em;
-		color: white;
-		cursor: pointer;
-	}
-
-	#check-menu:checked ~ul{
-		display: block;
-	}
-
-	.nosotros {
-		padding: 10px;
-		display: flex;
-		flex-direction: column-reverse;
-		justify-content: space-evenly;
-		align-items: center;
-		overflow: auto;
-	}
-
-	.quienes-somos, .detalle{
-		padding: 5%;
-		font-size: 1.5rem;
-	}
-
-	.mision{
-		display: flex;
-		flex-direction: column;
-		gap: 10vh;
-	}
-
-	.petshop{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-	}
-
-	.card{
-		width: 100%;
-		height: auto;
-		font-size: 1.5em;
-		display: flex;
-		flex-direction:column;
-		justify-content:flex-start;
-	}
-
-	.container-contacto{
-		height: auto;
-		display:flex;
-		flex-direction: column-reverse;
-		justify-content: center;
-	}
-
-	.galeria-marcas{
-		display: none;
-	}
-
-	.row{
-		display: flex;
-		flex-direction: column;
-	}
-
-	.row-cols-4{
-		display: block;
-		flex-direction: row;
-		align-items: baseline;
-	}
-
-	.col-2{
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-	}
-
-	footer{
-		height: auto;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-
-}
+/*# sourceMappingURL=styles.css.map */

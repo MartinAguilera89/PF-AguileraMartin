@@ -1,0 +1,292 @@
+@import "partials/reset";
+@import "partials/fonts";
+@import "partials/variables";
+
+/* estilos generales */
+
+body {
+    font-family: "LGC", serif;
+    font-size: 16px;
+  }
+  
+  header {
+    width: 100%;
+    height: 400px;
+    background-image: url(../imagenes/fondo7.jpg);
+    background-position: 0;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  
+    h1 {
+      font-family: "LGC Bold", serif;
+      padding: 10px 20px 5px 30px;
+      font-size: $big;
+    }
+  
+    p {
+      padding: 5px 30px;
+    }
+  }
+  
+  .navbar {
+    width: 100%;
+    height: 50px;
+    background-color: $red;
+    display: block;
+    position: sticky;
+    top: 0;
+  
+    ul {
+      display: flex;
+      justify-content: flex-end;
+  
+      .item {
+        padding: 0 20px;
+        margin-right: 5px;
+        background: rgb(82,0,0);
+        background: linear-gradient(36deg, rgba(82,0,0,1) 0%, rgba(121,9,9,1) 40%, rgba(194,0,0,1) 100%);
+      }
+    }
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-family: "LGC Bold", serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 2.2rem;
+  }
+  
+  #check-menu, label.hamburguesa {
+    display: none;
+  }
+  
+  a:hover {
+    background-color: whitesmoke;
+    color: hsl(356, 100%, 39%);
+    opacity: .8;
+    font-size: 1.25rem;
+    font-style: italic;
+  }
+  
+  footer {
+    width: 100%;
+    height: 200px;
+    background-color: $red;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    overflow: hidden;
+  }
+  
+  /* estilos inicio */
+  
+  .nosotros {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+  
+  
+    .quienes-somos {
+        width: 100%;
+        height: 350px;
+        margin: auto;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+  
+        h2 {
+        padding-bottom: 30px;
+        font-weight: bold;
+            }
+        }
+    }
+  
+  .mision {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 100px 50px;
+  
+    img:hover {
+      opacity: .8;
+    }
+
+    .muestra {
+        overflow: hidden;
+     }
+  }
+  
+  .detalle {
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  
+  .petshop{
+	padding: 30px;
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+
+    .card{
+        width: 300px;
+        height: auto;
+        background-color: rgb(247, 247, 236);
+        display: flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        border: 0.25px solid rgb(10, 10, 116) ;
+        border-radius: 10px ;
+    }
+    
+    .pulse:hover {
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: backwards;
+        animation-fill-mode: backwards;
+        }
+        @-webkit-keyframes pulse {
+        0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        }
+        50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+        }
+        100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        }
+        }
+        @keyframes pulse {
+        0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        }
+        50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+        }
+        100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        }
+        } 
+    h3{
+        padding: 20px;
+        color: rgb(10, 10, 116);
+        font-size: $medium;
+        font-weight: bold;
+    }
+}
+  /* estilos perros y gatos*/
+  
+  .descripcion {
+    height: 30vh;
+    padding: 5%;
+  }
+  
+  .galeria-marcas {
+    width: 100%;
+    padding: 50px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: auto;
+  }
+  
+  .row-cols-4 {
+    padding: 2.5%;
+    gap: 3.5rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    h4{
+        font-weight: bold;
+    }
+  }
+  
+  .row div {
+    border: 1px solid;
+    border-radius: 10px;
+    font-weight: bold;
+    background: rgb(248,251,188);
+    background: radial-gradient(circle, rgba(248,251,188,1) 1%, rgba(250,233,138,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  
+  /* estilos accesorios */
+  
+  /* estilos servicios */
+  
+  /* estilos contacto */
+  
+  .formulario {
+    width: 100%;
+    height: 700px;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+        .consulta {
+        margin-top: 1em;
+        height: 2.5em;
+        padding: 10px;
+        }   
+        .form {
+            width: 50%;
+            height: 100px;
+            margin-top: 30px;
+            display: block;
+            justify-content: center;
+            flex-direction: column;
+            flex-grow: 0.5;
+            row-gap: 1rem;
+        }   
+    }
+  
+  .container-contacto {
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    .maps-contacto {
+        color: black;
+        font-size: 16px;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      
+      .encontrar {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+}
+
+@import "partials/queries";
+
+
+
+
