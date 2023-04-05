@@ -105,6 +105,7 @@ body {
         h2 {
         padding-bottom: 30px;
         font-weight: bold;
+        font-size: $big;
             }
         }
     }
@@ -118,10 +119,6 @@ body {
     img:hover {
       opacity: .8;
     }
-
-    .muestra {
-        overflow: hidden;
-     }
   }
   
   .detalle {
@@ -145,14 +142,21 @@ body {
         border: 0.25px solid rgb(10, 10, 116) ;
         border-radius: 10px ;
     }
-    
-    .pulse:hover {
+
+    h3{
+        padding: 20px;
+        color: rgb(10, 10, 116);
+        font-size: $medium;
+        font-weight: bold;
+    }
+
+    .pulse:hover{
         -webkit-animation-name: pulse;
         animation-name: pulse;
-        -webkit-animation-duration: 1.5s;
+        -webkit-animation-duration: 2s;
         animation-duration: 3s;
-        -webkit-animation-fill-mode: backwards;
-        animation-fill-mode: backwards;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
         }
         @-webkit-keyframes pulse {
         0% {
@@ -161,7 +165,7 @@ body {
         }
         50% {
         -webkit-transform: scale3d(1.05, 1.05, 1.05);
-        transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.07, 1.07, 1.07);
         }
         100% {
         -webkit-transform: scale3d(1, 1, 1);
@@ -175,19 +179,13 @@ body {
         }
         50% {
         -webkit-transform: scale3d(1.05, 1.05, 1.05);
-        transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.07, 1.07, 1.07);
         }
         100% {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
         }
-        } 
-    h3{
-        padding: 20px;
-        color: rgb(10, 10, 116);
-        font-size: $medium;
-        font-weight: bold;
-    }
+      } 
 }
   /* estilos perros y gatos*/
   
@@ -248,7 +246,9 @@ body {
         margin-top: 1em;
         height: 2.5em;
         padding: 10px;
+        font-weight: bold;
         }   
+
         .form {
             width: 50%;
             height: 100px;
@@ -258,6 +258,9 @@ body {
             flex-direction: column;
             flex-grow: 0.5;
             row-gap: 1rem;
+            background: rgb(255,255,255);
+            background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(196,98,98,1) 70%, rgba(180,67,67,1) 100%);
+        
         }   
     }
   

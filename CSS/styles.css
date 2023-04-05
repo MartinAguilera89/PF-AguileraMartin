@@ -109,6 +109,7 @@ footer {
 .nosotros .quienes-somos h2 {
   padding-bottom: 30px;
   font-weight: bold;
+  font-size: 3rem;
 }
 
 .mision {
@@ -119,9 +120,6 @@ footer {
 }
 .mision img:hover {
   opacity: 0.8;
-}
-.mision .muestra {
-  overflow: hidden;
 }
 
 .detalle {
@@ -145,13 +143,19 @@ footer {
   border: 0.25px solid rgb(10, 10, 116);
   border-radius: 10px;
 }
+.petshop h3 {
+  padding: 20px;
+  color: rgb(10, 10, 116);
+  font-size: 2.2rem;
+  font-weight: bold;
+}
 .petshop .pulse:hover {
   -webkit-animation-name: pulse;
   animation-name: pulse;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 2s;
   animation-duration: 3s;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 @-webkit-keyframes pulse {
   0% {
@@ -160,7 +164,7 @@ footer {
   }
   50% {
     -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.07, 1.07, 1.07);
   }
   100% {
     -webkit-transform: scale3d(1, 1, 1);
@@ -174,18 +178,12 @@ footer {
   }
   50% {
     -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.07, 1.07, 1.07);
   }
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
-}
-.petshop h3 {
-  padding: 20px;
-  color: rgb(10, 10, 116);
-  font-size: 2.2rem;
-  font-weight: bold;
 }
 
 /* estilos perros y gatos*/
@@ -241,6 +239,7 @@ footer {
   margin-top: 1em;
   height: 2.5em;
   padding: 10px;
+  font-weight: bold;
 }
 .formulario .form {
   width: 50%;
@@ -251,6 +250,8 @@ footer {
   flex-direction: column;
   flex-grow: 0.5;
   row-gap: 1rem;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(196, 98, 98) 70%, rgb(180, 67, 67) 100%);
 }
 
 .container-contacto {
@@ -306,7 +307,7 @@ footer {
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center;
-    overflow: auto;
+    overflow: visible;
   }
   .quienes-somos, .detalle {
     padding: 5%;
@@ -351,6 +352,7 @@ footer {
   }
   .col-2 {
     width: 100%;
+    margin-bottom: 2vh;
     display: flex;
     flex-direction: column;
   }
