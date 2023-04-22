@@ -495,12 +495,6 @@ footer .footer__top__item .footer__top__icon {
     flex-direction: column;
     justify-content: flex-start;
   }
-  .container-contacto {
-    height: auto;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
   .descripcion {
     height: auto;
     font-size: 1.5rem;
@@ -532,10 +526,20 @@ footer .footer__top__item .footer__top__icon {
     grid-template-columns: repeat(3, 160px);
     grid-template-rows: repeat(8, 160px);
   }
-  .encontrar {
+  .consulta {
+    padding: auto;
+    text-align: center;
+  }
+  .container-contacto {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .container-contacto .encontrar {
     font-size: 22px;
   }
-  .encontrar h2 {
+  .container-contacto .encontrar h2 {
     font-size: 2.2rem;
   }
   .container-vet {

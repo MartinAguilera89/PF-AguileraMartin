@@ -105,13 +105,6 @@
 		justify-content:flex-start;
 	}
 
-	.container-contacto{
-		height: auto;
-		display:flex;
-		flex-direction: column-reverse;
-		justify-content: center;
-	}
-
 	.descripcion{
 		height: auto;
 		font-size: 1.5rem;
@@ -149,10 +142,24 @@
 			grid-template-rows: repeat(8, 160px);
 	}
 
-	.encontrar{
+	.consulta{
+		padding: auto;
+		text-align: center;
+
+	}
+	.container-contacto{
+		height: auto;
+		display:flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+	
+
+		.encontrar{
 			font-size: $text;
-		h2{
-			font-size: $medium;
+
+			h2{
+				font-size: $medium;
+			}
 		}
 	}
 
@@ -224,3 +231,4 @@
 		  }
 	}
 }
+
